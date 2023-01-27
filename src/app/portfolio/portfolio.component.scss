@@ -1,0 +1,39 @@
+.portfolio {
+  position: relative;
+  font-family: "Salma";
+  .portfolio-content {
+    position: absolute;
+    top: 6vh;
+    right: 3vw;
+    position: relative;
+    font-size: 1.8vw;
+    text-shadow: 0.5px 0.5px red;
+    #under {
+      margin: 0;
+      width: 40vw;
+      line-height: 4.4vh;
+      letter-spacing: 0.1vw;
+      position: absolute;
+      top: 30vh;
+      text-align: center;
+      rotate: (-45deg);
+    }
+    #construction {
+      margin: 0;
+      width: 40vw;
+      line-height: 4.4vh;
+      letter-spacing: 0.1vw;
+      position: absolute;
+      top: 30vh;
+      right: -50vw;
+      text-align: center;
+      rotate: (45deg);
+    }
+    #robo1 {
+      position: absolute;
+      top: 30vh;
+      left: 20vw;
+      width: 10vw;
+    }
+  }
+}

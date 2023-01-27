@@ -1,0 +1,23 @@
+.about {
+  display: flex;
+  width: 45vw;
+
+  .content {
+    padding: 10vh 1vw 1vh 1vw;
+    width: 30vw;
+  }
+  img {
+    width: 13vw;
+    border-radius: 1000px;
+    margin: 15vh 0 0 0;
+  }
+  h2 {
+    font-family: "Data";
+  }
+  h3 {
+    font-family: "Salma";
+  }
+  p {
+    font-family: "Salma";
+  }
+}

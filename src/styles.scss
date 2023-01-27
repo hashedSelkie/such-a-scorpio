@@ -1,0 +1,32 @@
+@font-face {
+  font-family: "Neue Reman";
+  src: url(../fonts/NeueRemanSans-Regular.otf);
+}
+
+@font-face {
+  font-family: "Data";
+  src: url(../fonts/data.otf);
+}
+
+@font-face {
+  font-family: "Regular";
+  src: url(../fonts/Resultat-Regular.otf);
+}
+
+@font-face {
+  font-family: "Salma";
+  src: url(../fonts/SalmaalfasansLight.otf);
+}
+
+$headerFont: "Data";
+$backgroundColor: white;
+$fontColor: rgba(0, 0, 0, 0.815);
+
+body {
+  margin: 0;
+}
+.head-content {
+  display: flex;
+  min-height: 100vh;
+  padding: 0 1vw 0 1vw;
+}

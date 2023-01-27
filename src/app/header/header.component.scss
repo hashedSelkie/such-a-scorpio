@@ -1,0 +1,19 @@
+@import "../../styles.scss";
+
+.header {
+  color: $fontColor;
+  background-color: $backgroundColor;
+  font-family: $headerFont;
+  padding: 5vh 3vw 2vh 2vw;
+  width: 38vw;
+  text-shadow: 2px 2px red;
+
+  h1 {
+    margin: 0;
+    font-size: 7vw;
+  }
+  p {
+    margin: 0;
+    font-size: 6vw;
+  }
+}

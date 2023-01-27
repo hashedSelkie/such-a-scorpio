@@ -1,0 +1,29 @@
+@import "../../styles.scss";
+
+.footer {
+  color: $fontColor;
+  text-align: center;
+  background-color: rgb(187, 187, 187);
+  font-family: "Neue Reman";
+  height: 15vh;
+  .footer-content {
+    padding: 3vh 2vw 3vh 2vw;
+    h1 {
+      margin: 0;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 2vh;
+    }
+    ul {
+      display: flex;
+      list-style: none;
+      width: 30vw;
+      margin: auto;
+      justify-content: center;
+      padding: 0;
+      li {
+        margin: 3vh 2vw 1vh 2vw;
+      }
+    }
+  }
+}
