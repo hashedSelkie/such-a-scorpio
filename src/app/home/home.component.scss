@@ -1,9 +1,30 @@
 @import "../../styles.scss";
 
-.home {
+@keyframes slideIn {
+  from {
+    margin: 0 0 0 100vw;
+  }
+}
+
+@keyframes slideOut {
+  to {
+    margin: 0 0 0 100vw;
+  }
+}
+
+.slideIn {
+  animation: slideIn 1s forwards;
+}
+
+.slideOut {
+  animation: slideOut 0.5s forwards;
+}
+
+#home {
   color: $fontColor;
   font-family: "Salma";
   position: relative;
+
   p {
     margin: 0;
     width: 40vw;

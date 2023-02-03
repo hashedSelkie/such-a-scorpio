@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { AngularSvgIconModule } from 'angular-svg-icon';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,6 +14,7 @@ import { MenuComponent } from './menu/menu.component';
 import { AboutComponent } from './about/about.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,16 +23,18 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
     FooterComponent,
     MenuComponent,
     AboutComponent,
-    PortfolioComponent
+    PortfolioComponent,
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     RouterModule.forRoot([
       {path: 'home', component: HomeComponent},
       {path: 'about', component: AboutComponent},
       {path: 'portfolio', component: PortfolioComponent},
       {path: '**', redirectTo: '/home', pathMatch: 'full'},
+  
     ]),
     HttpClientModule, 
     AngularSvgIconModule.forRoot()

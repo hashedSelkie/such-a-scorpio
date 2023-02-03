@@ -1,23 +1,47 @@
-.about {
+#about {
   display: flex;
-  width: 45vw;
+  width: 50vw;
+}
 
-  .content {
-    padding: 10vh 1vw 1vh 1vw;
-    width: 30vw;
-  }
-  img {
-    width: 13vw;
-    border-radius: 1000px;
-    margin: 15vh 0 0 0;
-  }
-  h2 {
-    font-family: "Data";
-  }
-  h3 {
-    font-family: "Salma";
-  }
-  p {
-    font-family: "Salma";
+.content {
+  padding: 10vh 1vw 5vh 1vw;
+  width: 50%;
+}
+.image-div {
+  width: 50%;
+}
+img {
+  width: 376px;
+  max-width: 80%;
+  height: auto;
+  margin: 17vh 0 0 3vw;
+}
+h2 {
+  font-family: "Data";
+}
+h3 {
+  font-family: "Salma";
+}
+p {
+  font-family: "Salma";
+}
+
+@media screen and (max-width: 1366px) {
+  #about {
+    display: block;
+    margin: auto;
+    .content {
+      width: 90%;
+    }
+    .image-div {
+      margin: auto;
+    }
+    img {
+      width: 376px;
+      max-width: 80%;
+      height: auto;
+      margin: auto auto 5vh auto;
+      border-radius: 100%;
+    }
   }
 }

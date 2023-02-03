@@ -12,7 +12,8 @@
       text-transform: uppercase;
       padding: 1vh 3vw 1vh 3vw;
     }
-    a {
+    a,
+    a:visited {
       text-decoration: none;
       display: inline-block;
     }
@@ -25,6 +26,9 @@
     }
     div:hover > p {
       transform: rotateY(180deg);
+    }
+    .on-page {
+      font-weight: bold;
     }
   }
 }

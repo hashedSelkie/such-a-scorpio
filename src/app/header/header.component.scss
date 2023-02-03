@@ -1,6 +1,14 @@
 @import "../../styles.scss";
-
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100;
+  }
+}
 .header {
+  animation: fadeIn 1.8s;
   color: $fontColor;
   background-color: $backgroundColor;
   font-family: $headerFont;
