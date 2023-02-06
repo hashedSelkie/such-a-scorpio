@@ -30,9 +30,9 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
     BrowserAnimationsModule,
     AppRoutingModule,
     RouterModule.forRoot([
-      {path: 'home', component: HomeComponent},
-      {path: 'about', component: AboutComponent},
-      {path: 'portfolio', component: PortfolioComponent},
+      {path: 'home', component: HomeComponent, data: { state: 'home' } },
+      {path: 'about', component: AboutComponent,  data: { state: 'about' }},
+      {path: 'portfolio', component: PortfolioComponent, data: { state: 'portfolio' }},
       {path: '**', redirectTo: '/home', pathMatch: 'full'},
   
     ]),
