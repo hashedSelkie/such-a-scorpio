@@ -24,6 +24,7 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
     MenuComponent,
     AboutComponent,
     PortfolioComponent,
+    
   ],
   imports: [
     BrowserModule,

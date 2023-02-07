@@ -1,3 +1,12 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
 @font-face {
   font-family: "Neue Reman";
   src: url(../fonts/NeueRemanSans-Regular.otf);
@@ -26,8 +35,22 @@ body {
   margin: 0;
   overflow-x: hidden;
 }
+
+.wrapper {
+  animation: fadeIn 1.4s forwards;
+}
+
 .head-content {
   display: flex;
   min-height: 100vh;
   padding: 0 1vw 0 1vw;
+}
+
+@media screen and (max-width: 1024px) {
+  .head-content {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
 }

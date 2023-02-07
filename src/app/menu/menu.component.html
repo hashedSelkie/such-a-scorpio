@@ -1,4 +1,7 @@
-<div class="menu">
+<div id="desktop-menu">
+  <div id="mobile">
+    <i (click)="openMenu($event)" class="fa-solid fa-bars"></i>
+  </div>
   <ul>
     <li>
       <a routerLink="/home" routerLinkActive="on-page">
@@ -16,4 +19,12 @@
       >
     </li>
   </ul>
+</div>
+<div class="overlayMenu" id="myNav">
+  <i (click)="closeMenu($event)" class="fa-solid fa-x"></i>
+  <div class="mobmenu">
+    <a routerLink="/home" (click)="closeMenu($event)">Home</a>
+    <a routerLink="/portfolio" (click)="closeMenu($event)">Portfolio</a>
+    <a routerLink="/about" (click)="closeMenu($event)">About</a>
+  </div>
 </div>

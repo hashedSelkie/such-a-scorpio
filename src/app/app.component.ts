@@ -10,15 +10,15 @@ import {trigger, animate, style, group, animateChild, query, stagger, transition
   animations: [
     trigger('routerTransition', [
       transition('* <=> *', [    
-        query(':enter, :leave', style({ position: 'fixed' })),
+        query(':enter, :leave', style({ position: 'fixed',  width:'100%' })),
         group([ 
           query(':enter', [
-            style({ margin: '0 0 0 100vw' }),
-            animate('0.9s ease-in-out', style({ margin: '0vw' }))
+            style({ transform: 'translateX(100%)' }),
+            animate('0.5s ease-in-out', style({ transform: 'translateX(0%)' }))
           ]),
           query(':leave', [
-            style({ transform: '0 vw' }),
-            animate('0.5s ease-in-out', style({ margin: '0 0 0 100vw' }))]),
+            style({ transform: 'translateX(0%)' }),
+            animate('0.5s ease-in-out', style({ transform: 'translateX(100%)' }))]),
         ])
       ])
     ])

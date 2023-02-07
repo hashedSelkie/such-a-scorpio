@@ -1,4 +1,5 @@
 #portfolio {
+  background-color: white;
   position: relative;
   font-family: "Salma";
   .portfolio-content {
@@ -15,6 +16,7 @@
       letter-spacing: 0.1vw;
       position: absolute;
       top: 30vh;
+      left: -0.5vw;
       text-align: center;
       rotate: (-45deg);
     }
@@ -25,7 +27,7 @@
       letter-spacing: 0.1vw;
       position: absolute;
       top: 30vh;
-      right: -50vw;
+      left: 11vw;
       text-align: center;
       rotate: (45deg);
     }
@@ -36,4 +38,35 @@
       width: 10vw;
     }
   }
+}
+
+@media screen and (max-width: 1024px) {
+  #portfolio {
+    position: relative;
+    font-family: "Salma";
+    .portfolio-content {
+      position: absolute;
+      top: 6vh;
+      right: 8vw;
+      position: relative;
+      font-size: 4vh;
+      text-shadow: 0.5px 0.5px red;
+      #under {
+        top: 6vh;
+        left: 10vw;
+      }
+      #construction {
+        top: 5vh;
+        left: 50vw;
+      }
+      #robo1 {
+        top: 8vh;
+        left: 25vw;
+        width: 50vw;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
 }

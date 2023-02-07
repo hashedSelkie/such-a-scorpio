@@ -4,16 +4,43 @@
   color: $fontColor;
   font-family: "Salma";
   position: relative;
+  background-color: wh;
 
   p {
     margin: 0;
     width: 40vw;
-    font-size: 1.5vw;
-    line-height: 4.4vh;
+    font-size: 1.5vmax;
+    line-height: 1.7em;
     letter-spacing: 0.1vw;
     position: absolute;
-    top: 40vh;
+    top: 40vmin;
     left: 10vw;
     text-align: right;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #home {
+    p {
+      top: 10vmin;
+      font-size: 2vmax;
+      text-align: left;
+      width: 70vw;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #home {
+    position: static;
+    padding: 4vh 0vw 0vh 5vw;
+    p {
+      width: 85vw;
+      font-size: 2.2vh;
+      line-height: 1.5em;
+      letter-spacing: 0.2vw;
+      position: static;
+      text-align: left;
+    }
   }
 }

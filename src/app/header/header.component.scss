@@ -1,14 +1,6 @@
 @import "../../styles.scss";
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 100;
-  }
-}
+
 .header {
-  animation: fadeIn 1.8s;
   color: $fontColor;
   background-color: $backgroundColor;
   font-family: $headerFont;
@@ -23,5 +15,36 @@
   p {
     margin: 0;
     font-size: 6vw;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .header {
+    margin: auto;
+    padding: 8vh 4vw 1vh 5vw;
+    width: 80vw;
+    display: block;
+    text-shadow: 0.9px 0.9px red;
+    h1 {
+      margin: 0;
+      font-size: 9vh;
+    }
+    p {
+      margin: 0;
+      font-size: 8vw;
+    }
+    .frontend {
+      display: flex;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    margin: 0;
+    padding: 8vh 4vw 1vh 5vw;
+    h1 {
+      font-size: 8vh;
+    }
   }
 }
