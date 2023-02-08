@@ -3,12 +3,13 @@
 }
 
 #desktop-menu {
-  height: 4vh;
+  min-height: 4vh;
   padding: 1vh 0.5vw 1vh 0.5vw;
   i {
     display: none;
   }
   ul {
+    padding: 10px 0 0 0;
     display: flex;
     list-style: none;
     margin: 0 auto 0 auto;
@@ -42,7 +43,7 @@
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1024px) {
   #desktop-menu {
     padding: 0;
     ul {
