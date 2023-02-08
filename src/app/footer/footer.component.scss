@@ -32,3 +32,34 @@
     }
   }
 }
+
+@media screen and (max-height: 600px) {
+  .footer {
+    height: 10vmax;
+    .footer-content {
+      padding: 2.5vh 2vw 2vh 2vw;
+      h1 {
+        margin: 0;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 2vmax;
+      }
+      ul {
+        display: flex;
+        list-style: none;
+        width: 30vw;
+        margin: auto;
+        justify-content: center;
+        padding: 1.2vh 0 0 0;
+        li {
+          margin: 1vmax 2vw 1vh 2vw;
+          img {
+            height: 3vmax;
+            padding: 0;
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}
