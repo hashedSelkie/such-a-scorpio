@@ -47,7 +47,7 @@
     font-family: "Salma";
     .portfolio-content {
       position: absolute;
-      top: 6vh;
+      top: 15vh;
       right: 8vw;
       position: relative;
       font-size: 2em;
@@ -74,16 +74,16 @@
 @media screen and (max-width: 768px) {
   #portfolio {
     .portfolio-content {
-      top: 6vh;
+      top: 15vh;
       right: 8vw;
       font-size: 3vmax;
       #under {
         top: 5vh;
-        left: 10vw;
+        left: 6vw;
       }
       #construction {
         top: 5vh;
-        left: 30vw;
+        left: 25vw;
       }
       #robo1 {
         top: 9vh;
