@@ -5,6 +5,8 @@
 #desktop-menu {
   min-height: 4vh;
   padding: 1vh 0.5vw 1vh 0.5vw;
+  width: 100%;
+  background-color: white;
   i {
     display: none;
   }
@@ -25,9 +27,10 @@
       text-decoration: none;
       display: inline-block;
       color: black;
+      text-align: center;
     }
     div {
-      height: 2vh;
+      height: 25px;
     }
     div > p {
       margin: auto;

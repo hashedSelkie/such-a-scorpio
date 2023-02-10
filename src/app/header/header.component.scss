@@ -1,12 +1,17 @@
 @import "../../styles.scss";
 
 .header {
-  color: $fontColor;
   background-color: $backgroundColor;
   font-family: $headerFont;
-  padding: 5vh 3vw 2vh 2vw;
+  padding: 12vh 3vw 2vh 2vw;
   width: 38vw;
-  text-shadow: 2px 2px red;
+
+  a,
+  a:visited {
+    text-decoration: none;
+    color: $fontColor;
+    text-shadow: 2px 2px red;
+  }
 
   h1 {
     margin: 0;
@@ -43,8 +48,12 @@
   .header {
     margin: 0;
     padding: 8vh 4vw 1vh 5vw;
+
     h1 {
       font-size: 8vh;
+    }
+    p {
+      text-shadow: 0.5px 0.5px red;
     }
   }
 }

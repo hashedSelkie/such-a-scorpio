@@ -2,20 +2,25 @@
   display: flex;
   width: 54vw;
   background-color: white;
-  font-size: 1.2vmax;
+  font-size: 1.3vmax;
 }
 .content {
-  width: 55%;
+  width: 60%;
   margin-top: 6vh;
+  margin-bottom: 2vh;
 }
 .image-div {
-  width: 50%;
+  width: 40%;
+}
+#inverted {
+  display: none;
 }
 img {
   width: 376px;
   max-width: 70%;
   height: auto;
-  margin: 15vh 0 0 3vw;
+  margin: 20vh 0 0 2.5vw;
+  border-radius: 50%;
 }
 h2 {
   font-family: "Data";
@@ -57,6 +62,7 @@ p {
     margin: 0;
   }
   .content {
-    padding: 2vh 1vw 5vh 1vw;
+    margin-top: 0vh;
+    padding: 1vh 1vw 5vh 1vw;
   }
 }

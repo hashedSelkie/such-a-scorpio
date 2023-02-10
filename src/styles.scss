@@ -29,11 +29,12 @@
 
 $headerFont: "Data";
 $backgroundColor: white;
-$fontColor: rgba(0, 0, 0, 0.815);
+$fontColor: rgba(0, 0, 0, 0.925);
 
 body {
   margin: 0;
   overflow-x: hidden;
+  min-height: 100px;
 }
 
 .wrapper {
