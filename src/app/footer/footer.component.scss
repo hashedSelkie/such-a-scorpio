@@ -6,6 +6,7 @@
   background-color: rgb(119, 119, 119);
   font-family: "Salma";
   height: 22vh;
+  min-height: 150px;
   .footer-content {
     padding: 2.5vh 2vw 2vh 2vw;
     h1 {
@@ -35,17 +36,15 @@
 
 @media screen and (max-height: 600px) {
   .footer {
-    height: 15vmax;
     .footer-content {
-      padding: 2.5vh 2vw 0vh 2vw;
+      padding: 10px;
       h1 {
-        font-size: 2vmax;
+        font-size: 1.5em;
       }
       ul {
         li {
-          margin: 1vmax 2vw 1vh 2vw;
           img {
-            height: 7vmax;
+            height: 40px;
           }
         }
       }
