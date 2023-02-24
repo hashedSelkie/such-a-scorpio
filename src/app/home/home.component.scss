@@ -4,18 +4,24 @@
   color: $fontColor;
   font-family: "Salma";
   position: relative;
-  background-color: white;
   min-height: 300px;
-
+  h1 {
+    font-size: 7vw;
+    color: $fontColor;
+    text-shadow: 2px 2px rgb(253, 0, 63);
+    font-family: "Data";
+    position: absolute;
+    top: 43vmin;
+    left: 45vw;
+  }
   p {
     margin: 0;
     width: 40vw;
     font-size: 1.5vmax;
     line-height: 1.7em;
     letter-spacing: 1px;
-    word-spacing: -1px;
     position: absolute;
-    top: 40vmin;
+    top: 30vmin;
     left: 10vw;
     text-align: right;
     padding: 10px 10px 30px 0;
@@ -37,9 +43,10 @@
   #home {
     position: static;
     padding: 4vh 0vw 0vh 5vw;
+
     p {
       width: 85vw;
-      font-size: 2.2vmax;
+      font-size: 1em;
       position: static;
       text-align: left;
     }

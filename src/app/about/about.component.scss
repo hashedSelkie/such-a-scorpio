@@ -1,7 +1,7 @@
 #about {
   display: flex;
   width: 54vw;
-  background-color: white;
+
   font-size: 1.3vmax;
 }
 .content {
@@ -20,6 +20,7 @@ img {
   max-width: 70%;
   height: auto;
   margin: 18vh 0 0 2.5vw;
+  box-shadow: 2px 2px rgb(253, 0, 63);
 }
 h2 {
   font-family: "Data";
@@ -37,7 +38,7 @@ p {
     margin: auto;
     padding: 0;
     width: 90vw;
-    font-size: 2vmax;
+    font-size: 1em;
     .content {
       width: 90%;
       padding: 5vh 1vw 5vh 5vw;
@@ -51,6 +52,7 @@ p {
       height: auto;
       margin: auto auto 5vmax auto;
       border-radius: 100%;
+      box-shadow: 1px 1px rgb(253, 0, 63);
     }
   }
 }

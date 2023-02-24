@@ -1,114 +1,29 @@
 #portfolio {
-  background-color: white;
-  position: relative;
-  font-family: "Salma";
-  min-height: 100vh;
+  width: 50vw;
+
   .portfolio-content {
-    position: absolute;
-    top: 6vh;
-    right: 3vw;
-    position: relative;
-    font-size: 2vmax;
-    text-shadow: 0.5px 0.5px red;
-    #under {
-      margin: 0;
-      width: 40vw;
-      line-height: 4.4vh;
-      letter-spacing: 0.1vw;
-      position: absolute;
-      top: 30vh;
-      left: -0.5vw;
+    margin: 5vmax 0 0 0;
+    p {
+      font-family: "Consolas";
+      text-transform: uppercase;
       text-align: center;
-      rotate: (-45deg);
+      font-size: 2em;
     }
-    #construction {
-      margin: 0;
-      width: 40vw;
-      line-height: 4.4vh;
-      letter-spacing: 0.1vw;
-      position: absolute;
-      top: 30vh;
-      left: 11vw;
-      text-align: center;
-      rotate: (45deg);
-    }
-    #robo1 {
-      position: absolute;
-      top: 32vh;
-      left: 20vw;
-      width: 10vw;
+    img {
+      max-width: 20vmax;
+      margin: auto;
+      display: block;
     }
   }
 }
 
 @media screen and (max-width: 1024px) {
   #portfolio {
-    position: relative;
-    font-family: "Salma";
+    margin: auto;
     .portfolio-content {
-      position: absolute;
-      top: 15vh;
-      right: 8vw;
-      position: relative;
-      font-size: 2em;
-      text-shadow: 0.5px 0.5px red;
-      #under {
-        top: 6vh;
-        left: 10vw;
-      }
-      #construction {
-        top: 7vh;
-        left: 25vw;
-      }
-      #robo1 {
-        top: 9vh;
-        left: 27vw;
-        width: 40vmin;
-        max-width: 20%;
-        min-width: 20%;
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 768px) {
-  #portfolio {
-    .portfolio-content {
-      top: 15vh;
-      right: 8vw;
-      font-size: 3vmax;
-      #under {
-        top: 5vh;
-        left: 6vw;
-      }
-      #construction {
-        top: 5vh;
-        left: 25vw;
-      }
-      #robo1 {
-        top: 9vh;
-        left: 25vw;
-        max-width: 30%;
-        min-width: 20%;
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 480px) {
-  #portfolio {
-    .portfolio-content {
-      #under {
-        top: 5.5vh;
-        left: 10vw;
-      }
-      #construction {
-        top: 5vh;
-        left: 40vw;
-      }
-      #robo1 {
-        max-width: 60%;
-        min-width: 20%;
+      margin: 10vmax 0 7vmax 0;
+      p {
+        font-size: 1.5em;
       }
     }
   }

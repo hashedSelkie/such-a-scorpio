@@ -10,7 +10,7 @@ import {trigger, animate, style, group, animateChild, query, stagger, transition
   animations: [
     trigger('routerTransition', [
       transition('* <=> *', [    
-        query(':enter, :leave', style({ position: 'fixed',  width:'100%' })),
+        query(':enter, :leave', style({ position: 'absolute',  width:'100%' })),
         group([ 
           query(':enter', [
             style({ transform: 'translateX(100%)' }),

@@ -1,16 +1,15 @@
 @import "../../styles.scss";
 
 .header {
-  background-color: $backgroundColor;
   font-family: $headerFont;
-  padding: 12vh 3vw 2vh 2vw;
+  padding: 3vmax 3vw 2vh 2vw;
   width: 38vw;
 
   a,
   a:visited {
     text-decoration: none;
     color: $fontColor;
-    text-shadow: 2px 2px red;
+    text-shadow: 2px 2px rgb(253, 0, 63);
   }
 
   h1 {
@@ -29,11 +28,8 @@
     padding: 8vh 4vw 1vh 5vw;
     width: 80vw;
     display: block;
-    text-shadow: 0.9px 0.9px red;
-    h1 {
-      margin: 0;
-      font-size: 9vh;
-    }
+    text-shadow: 0.9px 0.9px rgb(253, 0, 63);
+    h1,
     p {
       margin: 0;
       font-size: 8vw;
@@ -47,13 +43,11 @@
 @media screen and (max-width: 768px) {
   .header {
     margin: 0;
-    padding: 8vh 4vw 1vh 5vw;
-
-    h1 {
-      font-size: 8vh;
-    }
+    padding: 1vh 4vw 1vh 5vw;
+    h1,
     p {
-      text-shadow: 0.5px 0.5px red;
+      font-size: 2em;
+      text-shadow: 0.5px 0.5px rgb(253, 0, 63);
     }
   }
 }

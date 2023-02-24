@@ -27,14 +27,20 @@
   src: url(../fonts/SalmaalfasansLight.otf);
 }
 
+@font-face {
+  font-family: "Major Mono";
+  src: url(../fonts/MajorMonoDisplay-Regular.ttf);
+}
+
 $headerFont: "Data";
-$backgroundColor: white;
-$fontColor: rgba(0, 0, 0, 0.925);
+$backgroundColor: rgb(230, 230, 230);
+$fontColor: rgb(0, 0, 0);
 
 body {
   margin: 0;
   overflow-x: hidden;
   min-height: 100px;
+  background-color: $backgroundColor;
 }
 
 .wrapper {
