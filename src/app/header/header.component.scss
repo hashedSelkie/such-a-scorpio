@@ -4,17 +4,18 @@
   font-family: $headerFont;
   padding: 3vmax 3vw 2vh 2vw;
   width: 38vw;
-
+  color: black;
   a,
   a:visited {
     text-decoration: none;
     color: $fontColor;
-    text-shadow: 2px 2px rgb(253, 0, 63);
+    text-shadow: 0.09vw 0.2vh rgb(253, 0, 63);
   }
 
   h1 {
     margin: 0;
-    font-size: 7vw;
+    font-size: 8vw;
+    letter-spacing: 0.4vw;
   }
   p {
     margin: 0;
@@ -24,30 +25,17 @@
 
 @media screen and (max-width: 1024px) {
   .header {
-    margin: auto;
-    padding: 8vh 4vw 1vh 5vw;
-    width: 80vw;
-    display: block;
+    width: 90%;
     text-shadow: 0.9px 0.9px rgb(253, 0, 63);
-    h1,
-    p {
-      margin: 0;
-      font-size: 8vw;
-    }
-    .frontend {
-      display: flex;
-    }
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .header {
-    margin: 0;
-    padding: 1vh 4vw 1vh 5vw;
-    h1,
-    p {
-      font-size: 2em;
-      text-shadow: 0.5px 0.5px rgb(253, 0, 63);
+    margin: auto;
+    a {
+      h1,
+      p {
+        font-size: 13vw;
+        width: 90%;
+        display: block;
+        margin: auto;
+      }
     }
   }
 }
