@@ -1,44 +1,21 @@
 @import "../../styles.scss";
 
 .footer {
-  color: $fontColor;
-  text-align: center;
-  background-color: rgb(119, 119, 119);
-  font-family: "Salma";
-  height: auto;
-  min-height: 150px;
   width: 100%;
+
   .footer-content {
-    padding: 20px;
     ul {
       display: flex;
-      list-style: none;
-      width: 30vw;
-      margin: auto;
       justify-content: center;
-      padding: 30px 0 0 0;
+      margin: 0;
+      padding: 0;
       li {
-        margin: 30px;
-        img {
-          width: 70px;
-          margin: 0;
-        }
+        list-style: none;
+        padding: 20px;
       }
-    }
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .footer {
-    .footer-content {
-      padding: 10px;
-      ul {
-        li {
-          margin: 3vw;
-          img {
-            width: 45px;
-          }
-        }
+      img {
+        width: 60px;
+        filter: invert(100%);
       }
     }
   }

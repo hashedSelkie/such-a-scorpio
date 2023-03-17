@@ -33,30 +33,26 @@
 }
 
 $headerFont: "Data";
-$backgroundColor: rgb(230, 230, 230);
-$fontColor: rgb(0, 0, 0);
+
+$shadowColor: rgb(255, 146, 4);
+$fontColor: white;
+$headerColor: rgb(251 142 0);
 
 body {
+  background-color: rgba(2, 39, 61, 0.9);
   margin: 0;
-  overflow-x: hidden;
-  background-color: $backgroundColor;
-}
 
-.wrapper {
-  animation: fadeIn 1.4s forwards;
-}
-
-.head-content {
-  display: flex;
-  min-height: 100vh;
-  padding: 0 1vw 0 1vw;
-}
-
-@media screen and (max-width: 1024px) {
   .head-content {
-    display: block;
+    display: flex;
+    justify-content: center;
+    height: auto;
+    min-height: 100vh;
+    .spacer {
+      width: 70px;
+    }
+    main {
+      width: 400px;
+      margin-top: 15vh;
+    }
   }
-}
-
-@media screen and (max-width: 768px) {
 }

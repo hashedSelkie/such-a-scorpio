@@ -1,72 +1,14 @@
 @import "../../styles.scss";
 
-#home {
-  color: $fontColor;
-  font-family: "Salma";
-  position: relative;
-  min-height: 300px;
-  .home-content {
-    position: absolute;
-    top: 30vmin;
-    left: 10vw;
-    h1 {
-      font-size: 7vw;
-      color: $fontColor;
-      text-shadow: 2px 2px rgb(253, 0, 63);
-      font-family: "Data";
-      margin: -10vmin 10px 0 0;
-      text-align: right;
-    }
-    p {
-      margin: 0;
-      width: 40vw;
-      font-size: 1.5vmax;
-      line-height: 1.7em;
-      letter-spacing: 1px;
-      text-align: right;
-      padding: 10px 10px 30px 0;
-    }
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  #home {
-    .home-content {
-      position: absolute;
-      top: 10vmin;
-      left: 10vw;
-      p {
-        font-size: 2vmax;
-        text-align: left;
-        width: 70vw;
-      }
-      h1 {
-        font-size: 7vw;
-        margin: -65px auto;
-        text-align: left;
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 768px) {
-  #home {
-    padding: 4vh 0vw 0vh 5vw;
-    .home-content {
-      position: static;
-      p {
-        width: 85vw;
-        font-size: 1em;
-        text-align: left;
-      }
-      h1 {
-        font-size: 4em;
-        color: $fontColor;
-        text-shadow: 1.5px 1.5px rgb(253, 0, 63);
-        font-family: "Data";
-        margin: -70px auto;
-        text-align: left;
-      }
-    }
+.home-wrapper {
+  width: 300px;
+  position: sticky;
+  top: 40vh;
+  margin: auto;
+  img {
+    width: 100px;
+    display: block;
+    margin: auto;
+    filter: invert(100%);
   }
 }

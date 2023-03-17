@@ -1,102 +1,47 @@
 @import "../../styles.scss";
-.overlayMenu {
-  display: none;
-}
 
-#desktop-menu {
-  min-height: 4vh;
-  padding: 1vh 0.5vw 1vh 0.5vw;
+.menu-wrapper {
   width: auto;
-  margin: 0;
+  min-width: 400px;
+  position: sticky;
+  top: 25vh;
+  background-color: #1a3c50;
+  a,
+  a:hover,
+  a:visited {
+    text-decoration: none;
+    color: $fontColor;
+    h1,
+    p {
+      font-family: "Data";
+      margin: 0;
+    }
+    h1 {
+      font-size: 5.5em;
 
-  i {
-    display: none;
+      text-shadow: 1px 1px $shadowColor, 2px 2px $shadowColor,
+        3px 3px $shadowColor, 4px 4px $shadowColor, 5px 5px $shadowColor;
+    }
+    p {
+      font-size: 3.5em;
+      color: $fontColor;
+      text-shadow: 1px 1px $shadowColor, 2px 2px $shadowColor,
+        3px 3px $shadowColor;
+    }
   }
   ul {
-    padding: 10px 0 0 0;
     display: flex;
     list-style: none;
-    margin: 0 auto 0 auto;
-    justify-content: right;
-    li {
-      margin: 0;
-      font-family: "Neue Reman";
-      text-transform: uppercase;
-      padding: 1vh 3vw 1vh 3vw;
-    }
-    a,
-    a:visited {
-      text-decoration: none;
-      display: inline-block;
-      color: black;
-      text-align: center;
-    }
-    div {
-      height: 25px;
-    }
-    div > p {
-      margin: auto;
-      transition: transform 0.7s ease-out;
-    }
-    div:hover > p {
-      transform: rotateY(180deg);
-    }
-    .on-page {
-      text-decoration: underline;
-      text-underline-offset: -1.3em;
-    }
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  #desktop-menu {
-    padding: 0;
-    ul {
-      display: none;
-    }
-    .fa-bars {
-      display: block;
-      padding: 3vw;
-      font-size: 2em;
-      text-shadow: red 0.5px 0.5px;
-      text-align: right;
-    }
-  }
-  .overlayMenu {
-    display: block;
-    width: 100vw;
-    height: 0%;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    background-color: $backgroundColor;
-    overflow-x: hidden;
-    transition: 0.5s;
-    .fa-x {
-      display: block;
-      padding: 3vw;
-      font-size: 2em;
-      text-shadow: red 0.5px 0.5px;
-      text-align: right;
-    }
-  }
-  .mobmenu {
-    position: relative;
-    top: 10%;
-    width: 100%;
-    text-align: center;
-    margin: 10px 0 50px 0;
-    font-family: "Neue Reman";
     text-transform: uppercase;
-    font-size: 5vmax;
-    a,
-    a:visited {
-      display: block;
-      text-decoration: none;
-      color: black;
-      text-shadow: red 0.7px 0.7px;
-      margin: 10vh 0 10vh 0;
+    justify-content: left;
+    font-family: "Calibri";
+    font-size: 1.5em;
+    li {
+      width: 100px;
+      a:hover,
+      .on-page {
+        font-style: italic;
+      }
     }
   }
 }

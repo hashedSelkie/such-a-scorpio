@@ -9,13 +9,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
-import { HeaderComponent } from './header/header.component';
+
 import { FooterComponent } from './footer/footer.component';
 import { MenuComponent } from './menu/menu.component';
 import { AboutComponent } from './about/about.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
-import { ContactComponent } from './contact/contact.component';
-import { ThankYouComponent } from './thank-you/thank-you.component';
+
 
 
 
@@ -23,13 +22,11 @@ import { ThankYouComponent } from './thank-you/thank-you.component';
   declarations: [
     AppComponent,
     HomeComponent,
-    HeaderComponent,
     FooterComponent,
     MenuComponent,
     AboutComponent,
     PortfolioComponent,
-    ContactComponent,
-    ThankYouComponent,
+  
     
   ],
   imports: [
@@ -39,9 +36,7 @@ import { ThankYouComponent } from './thank-you/thank-you.component';
     RouterModule.forRoot([
       {path: 'home', component: HomeComponent, data: { state: 'home' } },
       {path: 'about', component: AboutComponent,  data: { state: 'about' }},
-      {path: 'portfolio', component: PortfolioComponent, data: { state: 'portfolio' }},
-      {path: 'contact', component: ContactComponent, data: { state: 'contact' }},
-      {path: 'thank-you', component: ThankYouComponent, data: { state: 'thank-you' }},
+      {path: 'portfolio', component: PortfolioComponent, data: { state: 'portfolio' }},     
       {path: '**', redirectTo: '/home', pathMatch: 'full'},
   
     ]),

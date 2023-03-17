@@ -7,7 +7,7 @@ import {trigger, animate, style, group, animateChild, query, stagger, transition
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
-  animations: [
+/*   animations: [
     trigger('routerTransition', [
       transition('* <=> *', [    
         query(':enter, :leave', style({ position: 'absolute',  width:'100%' })),
@@ -22,7 +22,7 @@ import {trigger, animate, style, group, animateChild, query, stagger, transition
         ])
       ])
     ])
-   ],
+   ], */
 })
 
 export class AppComponent {

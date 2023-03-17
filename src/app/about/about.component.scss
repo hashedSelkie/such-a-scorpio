@@ -1,69 +1,27 @@
-#about {
+@import "../../styles.scss";
+
+.about-wrapper {
   display: flex;
-  width: 54vw;
-
-  font-size: 1.3vmax;
-}
-.content {
-  width: 55%;
-  margin-top: 6vh;
-  margin-bottom: 2vh;
-}
-.image-div {
-  width: 45%;
-}
-#inverted {
-  display: none;
-}
-img {
-  width: 376px;
-  max-width: 70%;
-  height: auto;
-  margin: 18vh 0 0 2.5vw;
-  box-shadow: 2px 2px rgb(253, 0, 63);
-}
-h2 {
-  font-family: "Data";
-}
-h3 {
-  font-family: "Salma";
-}
-p {
-  font-family: "Salma";
-}
-
-@media screen and (max-width: 1024px) {
-  #about {
-    display: block;
-    margin: auto;
-    padding: 0;
-    width: 90vw;
-    font-size: 1em;
-    .content {
-      width: 90%;
-      padding: 5vh 1vw 5vh 5vw;
-    }
-    .image-div {
-      margin: auto;
+  margin: 11vh 0;
+  .about-top {
+    h2 {
+      font-family: "Data";
+      font-size: 3em;
+      margin: 0 auto;
+      color: $fontColor;
     }
     img {
-      width: 376px;
-      max-width: 100%;
-      height: auto;
-      margin: auto auto 5vmax auto;
-      border-radius: 100%;
-      box-shadow: 1px 1px rgb(253, 0, 63);
+      height: 22%;
+      width: auto;
+      margin: auto;
+      display: block;
+      margin: 50px auto;
     }
-  }
-}
-
-@media screen and (max-width: 768px) {
-  #about {
-    width: 90vw;
-    margin: 0;
-  }
-  .content {
-    margin-top: 0vh;
-    padding: 1vh 1vw 5vh 1vw;
+    p,
+    h3 {
+      font-family: "Calibri", sans-serif;
+      font-size: 1.5em;
+      color: $fontColor;
+    }
   }
 }

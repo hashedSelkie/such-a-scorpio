@@ -1,30 +1,15 @@
-#portfolio {
-  width: 50vw;
+@import "../../styles.scss";
 
-  .portfolio-content {
-    margin: 5vmax 0 0 0;
-    p {
-      font-family: "Consolas";
-      text-transform: uppercase;
-      text-align: center;
-      font-size: 2em;
-    }
-    img {
-      max-width: 20vmax;
-      margin: auto;
-      display: block;
-    }
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  #portfolio {
+.portfolio-wrapper {
+  width: 300px;
+  position: sticky;
+  top: 35vh;
+  margin: auto;
+  img {
+    width: 30%;
+    max-width: 300px;
+    min-width: 100px;
+    display: block;
     margin: auto;
-    .portfolio-content {
-      margin: 10vmax 0 7vmax 0;
-      p {
-        font-size: 1.5em;
-      }
-    }
   }
 }
