@@ -11,10 +11,14 @@
   a:visited {
     text-decoration: none;
     color: $fontColor;
+    img {
+      display: none;
+    }
     h1,
     p {
       font-family: "Data";
       margin: 0;
+      text-transform: uppercase;
     }
     h1 {
       font-size: 5.5em;
@@ -23,6 +27,7 @@
     }
     p {
       font-size: 3.5em;
+      font-weight: bold;
       color: $fontColor;
       text-shadow: 1px 1px $shadowColor, 2px 2px $shadowColor,
         3px 3px $shadowColor;
@@ -59,15 +64,26 @@
     .mobile-header {
       justify-content: center;
       display: flex;
-      padding: 20px 0;
+      align-items: center;
+      height: 40vh;
       a {
+        img {
+          display: block;
+          width: 100px;
+          margin: auto;
+          filter: invert(100%);
+        }
         h1 {
+          display: none;
           font-size: 5em;
+          font-weight: normal;
           text-shadow: 1px 1px $shadowColor, 1.5px 1.5px $shadowColor,
             2px 2px $shadowColor, 2px 2px $shadowColor, 2.5px 2.5px $shadowColor;
         }
         p {
+          display: none;
           font-size: 3em;
+          font-weight: normal;
           color: $fontColor;
           text-shadow: 1px 1px $shadowColor, 1.5px 1.5px $shadowColor,
             2px 2px $shadowColor;
@@ -95,16 +111,6 @@
         li {
           margin: 10px;
           width: auto;
-        }
-        #scorpioLi {
-          width: auto;
-          margin: 12px;
-        }
-        img {
-          display: block;
-          width: 30px;
-          margin: auto;
-          filter: invert(100%);
         }
       }
     }
