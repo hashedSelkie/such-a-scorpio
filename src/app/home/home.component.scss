@@ -12,3 +12,13 @@
     filter: invert(100%);
   }
 }
+
+@media screen and (max-width: 950px) {
+  .home-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 40vh;
+  }
+}

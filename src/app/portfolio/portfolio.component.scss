@@ -13,3 +13,13 @@
     margin: auto;
   }
 }
+
+@media screen and (max-width: 950px) {
+  .portfolio-wrapper {
+    width: auto;
+    min-height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

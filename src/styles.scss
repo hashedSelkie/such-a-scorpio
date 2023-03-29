@@ -61,10 +61,15 @@ body {
   body {
     .head-content {
       display: block;
+      spencer {
+        display: none;
+      }
 
       main {
         margin: auto;
         padding: 20px 0;
+        width: auto;
+        max-width: 500px;
       }
     }
   }

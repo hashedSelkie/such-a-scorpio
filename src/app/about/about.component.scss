@@ -25,3 +25,33 @@
     }
   }
 }
+
+@media screen and (max-width: 950px) {
+  .about-wrapper {
+    margin: 5vh auto;
+
+    .about-top {
+      width: 90%;
+      margin: auto;
+      h2 {
+        font-size: 2em;
+      }
+      img {
+        height: auto;
+        width: 80%;
+        margin: auto;
+        display: block;
+        margin: 50px auto;
+      }
+      p,
+      h3 {
+        font-family: "Calibri", sans-serif;
+        font-size: 1.1em;
+        color: $fontColor;
+      }
+      p {
+        width: 100%;
+      }
+    }
+  }
+}

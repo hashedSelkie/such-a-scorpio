@@ -20,3 +20,20 @@
     }
   }
 }
+
+@media screen and (max-width: 950px) {
+  .footer {
+    .footer-content {
+      ul {
+        li {
+          list-style: none;
+          padding: 10px;
+        }
+        img {
+          width: 50px;
+          filter: invert(100%);
+        }
+      }
+    }
+  }
+}
