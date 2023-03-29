@@ -1,24 +1,33 @@
 <div class="menu-wrapper">
-  <a routerLink="/home" (click)="toTop()">
-    <h1>
-      Martina <br />
-      Kurin
-    </h1>
-    <p>
-      /Frontend <br />
-      Developer
-    </p>
-  </a>
-  <ul>
-    <li>
-      <a routerLink="/about" (click)="toTop()" routerLinkActive="on-page">
-        About</a
-      >
-    </li>
-    <li>
-      <a routerLink="/portfolio" (click)="toTop()" routerLinkActive="on-page">
-        Portfolio</a
-      >
-    </li>
-  </ul>
+  <div class="mobile-header">
+    <a routerLink="/home" (click)="toTop()">
+      <h1>
+        Martina <br />
+        Kurin
+      </h1>
+      <p>
+        /Frontend <br />
+        Developer
+      </p>
+    </a>
+  </div>
+  <div class="mobile-menu">
+    <ul>
+      <li id="scorpioLi">
+        <a routerLink="/home" (click)="toTop()"
+          ><img src="../../assets/scorpion-svgrepo-com.svg" alt=""
+        /></a>
+      </li>
+      <li>
+        <a routerLink="/about" (click)="toTop()" routerLinkActive="on-page">
+          About</a
+        >
+      </li>
+      <li>
+        <a routerLink="/portfolio" (click)="toTop()" routerLinkActive="on-page">
+          Portfolio</a
+        >
+      </li>
+    </ul>
+  </div>
 </div>
