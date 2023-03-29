@@ -56,3 +56,16 @@ body {
     }
   }
 }
+
+@media screen and (max-width: 950px) {
+  body {
+    .head-content {
+      display: block;
+
+      main {
+        margin: auto;
+        padding: 20px 0;
+      }
+    }
+  }
+}
