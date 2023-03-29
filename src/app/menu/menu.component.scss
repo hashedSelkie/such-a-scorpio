@@ -18,7 +18,7 @@
     }
     h1 {
       font-size: 5.5em;
-
+      font-smooth: always;
       text-shadow: 1px 1px $shadowColor, 2px 2px $shadowColor,
         3px 3px $shadowColor, 4px 4px $shadowColor, 5px 5px $shadowColor;
     }
