@@ -14,6 +14,7 @@ import { FooterComponent } from './footer/footer.component';
 import { MenuComponent } from './menu/menu.component';
 import { AboutComponent } from './about/about.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
+import { ConstructionComponent } from './construction/construction.component';
 
 
 
@@ -26,6 +27,7 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
     MenuComponent,
     AboutComponent,
     PortfolioComponent,
+    ConstructionComponent,
   
     
   ],
@@ -36,7 +38,8 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
     RouterModule.forRoot([
       {path: 'home', component: HomeComponent, data: { state: 'home' } },
       {path: 'about', component: AboutComponent,  data: { state: 'about' }},
-      {path: 'portfolio', component: PortfolioComponent, data: { state: 'portfolio' }},     
+      {path: 'portfolio', component: PortfolioComponent, data: { state: 'portfolio' }}, 
+      {path: 'construction', component: ConstructionComponent, data: { state: 'construction' }},     
       {path: '**', redirectTo: '/home', pathMatch: 'full'},
   
     ]),

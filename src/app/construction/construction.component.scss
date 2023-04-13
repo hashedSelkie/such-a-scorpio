@@ -1,33 +1,26 @@
 @import "../../styles.scss";
 
-.portfolio-wrapper {
+.construction-wrapper {
   width: 300px;
   position: sticky;
-  top: 30vh;
+  top: 35vh;
   margin: auto;
 
   img {
     width: 30%;
     max-width: 300px;
-    min-width: 100px;
+
     display: block;
-    margin: 25px 0;
+    margin: auto;
   }
   p {
-    margin: auto 20px;
-  }
-  #crag {
-    border-radius: 50%;
-  }
-  a,
-  a:visited {
+    margin: 20px;
     text-transform: uppercase;
-    text-decoration: none;
     color: white;
     font-family: "Calibri";
     font-weight: bold;
-    font-size: 1.2em;
-    display: flex;
+    font-size: 1.5em;
+    text-align: center;
   }
 }
 
@@ -38,16 +31,5 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    a {
-      margin: 0 auto 50px;
-      display: block;
-      img {
-        margin: auto;
-      }
-      p {
-        text-align: center;
-        padding: 15px;
-      }
-    }
   }
 }
