@@ -68,3 +68,33 @@ jobs:
         git add .
         git commit -m "Auto commit from such-a-scorpio's Deploy to Test run: ${{ github.run_number }}"
         git push
+
+  deploy_to_prod:
+    name: Deploy to Prod
+    needs: deploy_to_test
+    env:
+      compose_path: prod/site/docker-compose.yaml
+    environment:
+      name: prod
+      url: https://suchascorpio.com
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout site-root
+      uses: actions/checkout@v4
+      with:
+        path: such-a-scorpio-site-root
+        repository: hashedSelkie/such-a-scorpio-site-root
+        token: ${{ secrets.SITE_ROOT_PAT }}
+
+    - name: Set image tag
+      run: |
+        yq -i '(.services.such-a-scorpio.image) = "${{ env.docker_image_tag }}"' such-a-scorpio-site-root/${{ env.compose_path }}
+
+    - name: Commit changes
+      run: |
+        cd such-a-scorpio-site-root
+        git config user.name "github-actions[bot]"
+        git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        git add .
+        git commit -m "Auto commit from such-a-scorpio's Deploy to Prod run: ${{ github.run_number }}"
+        git push
