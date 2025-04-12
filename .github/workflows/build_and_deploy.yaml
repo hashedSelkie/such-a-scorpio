@@ -63,5 +63,5 @@ jobs:
         git config user.name "github-actions[bot]"
         git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
         git add .
-        git commit -m "Auto commit from such-a-scorpio build: ${{ github.run_number }}"
+        git commit -m "Auto commit from such-a-scorpio's Build & Deploy run: ${{ github.run_number }}"
         git push
