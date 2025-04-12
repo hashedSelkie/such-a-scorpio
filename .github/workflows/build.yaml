@@ -1,10 +1,16 @@
 name: build
 
 on:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - '.github/**'
+      - 'README.md'
   workflow_dispatch:
 
 env:
-  docker_image_tag: ryantodd/test-such-a-scorpio:0.1.${{ github.run_number }}
+  docker_image_tag: ryantodd/such-a-scorpio:0.1.${{ github.run_number }}
   compose_path: test/site/docker-compose.yaml
   service_name: such-a-scorpio
 
