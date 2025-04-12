@@ -41,6 +41,7 @@ jobs:
 
   deploy_to_test:
     name: Deploy to Test
+    needs: build
     env:
       compose_path: test/site/docker-compose.yaml
     runs-on: ubuntu-latest
