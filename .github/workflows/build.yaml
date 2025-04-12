@@ -11,15 +11,14 @@ on:
 
 env:
   docker_image_tag: ryantodd/such-a-scorpio:0.1.${{ github.run_number }}
-  compose_path: test/site/docker-compose.yaml
-  service_name: such-a-scorpio
 
 defaults:
   run:
     shell: bash
 
 jobs:
-  build_docker_images:
+  build:
+    name: Build
     runs-on: ubuntu-latest
     steps:
     - name: Checkout this repo
@@ -40,6 +39,12 @@ jobs:
        push: true
        tags: ${{ env.docker_image_tag }}
 
+  deploy_to_test:
+    name: Deploy to Test
+    env:
+      compose_path: test/site/docker-compose.yaml
+    runs-on: ubuntu-latest
+    steps:
     - name: Checkout site-root
       uses: actions/checkout@v4
       with:
