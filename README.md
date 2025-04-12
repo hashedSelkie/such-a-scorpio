@@ -28,6 +28,16 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Workflow setup
 
+### Environments
+
+Navigate to this repo's `Settings` - `Environments` and create the following environments:
+
+- `test`
+    - Don't set `Required reviewers` because we want to deploy to test automatically
+- `prod`
+    - Set `Required reviewers`
+    - Untick `Allow administrators to bypass configured protection rules`
+
 ### Secrets and variables
 
 Navigate to this repo's `Settings` - `Secrets and variables` - `Actions`. Create a `New Repository Secret` for all of the following:

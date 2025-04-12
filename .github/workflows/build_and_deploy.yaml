@@ -44,6 +44,9 @@ jobs:
     needs: build
     env:
       compose_path: test/site/docker-compose.yaml
+    environment:
+      name: test
+      url: https://test.suchascorpio.com
     runs-on: ubuntu-latest
     steps:
     - name: Checkout site-root
